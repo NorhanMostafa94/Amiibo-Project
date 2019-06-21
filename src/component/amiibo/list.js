@@ -45,7 +45,7 @@ class AmiiboList extends Component {
             <>
                 <Container>
                     <Row className="justify-content-md-center">
-                        <Form.Control type="text" name="title" placeholder="Enter name" onChange={this.handleInputChange} value={this.state.inputValue} />
+                        <Form.Control type="text" name="title" placeholder="Search" onChange={this.handleInputChange} value={this.state.inputValue} />
                     </Row>
                 </Container>
                 <div className="grid-layout">

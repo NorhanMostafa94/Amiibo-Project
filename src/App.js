@@ -16,7 +16,12 @@ const App = () => {
         pageStart={0}
         // loadMore={loadFunc}
         hasMore={true || false}
-        loader={<div className="loader" key={0}></div>}
+        loader={<div className="loader" key={0}>
+          <div className="loading-1"></div>
+          <div className="loading-2"></div>
+          <div className="loading-3"></div>
+          <div className="loading-4"></div>
+        </div>}
       >
         <AmiiboList />
       </InfiniteScroll>
