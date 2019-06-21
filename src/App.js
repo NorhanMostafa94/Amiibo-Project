@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Suspense } from 'react';
+// import logo from './logo.svg';
 import './App.css';
+import './style.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import InfiniteScroll from 'react-infinite-scroller';
+// import AmiiboList from './component/amiibo/list';
+const AmiiboList = React.lazy(() => import('./component/amiibo/list'))
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Suspense fallback>
+
+      <InfiniteScroll
+        pageStart={0}
+        // loadMore={loadFunc}
+        hasMore={true || false}
+        loader={<div className="loader" key={0}></div>}
+      >
+        <AmiiboList />
+      </InfiniteScroll>
+    </Suspense>
   );
 }
 

@@ -1,0 +1,91 @@
+.cardList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vw;
+    text-align: center;
+}
+
+.card__header {
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.card-item {
+    width: 300px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    border: 0;
+    overflow: hidden;
+    flex-flow: column;
+    padding: 1rem;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333333;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    min-height: 200px;
+}
+
+.img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-gap: 25px;
+    padding: 30px 35px 30px 30px;
+    margin-top: 50px
+        /* overflow: hidden; */
+}
+
+.grid-item {
+    padding: 1rem;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333333;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    min-height: 100px;
+    /* height: auto; */
+    /* max-height: 200px; */
+    /* display: block; */
+}
+
+.grid-item:hover {
+    background-color: #e0e0e0;
+    transition: all 0.3s;
+}
+
+
+.grid-item:nth-child(odd) {
+    grid-row-end: span 2;
+}
+
+@media screen and (min-width: 600px) {
+    .grid-item:nth-child(even) {
+        grid-row-end: span 3;
+        height: 100%;
+
+        /* margin-top: 200px; */
+    }
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    background-color: #333333;
+    border-radius: 50%;
+    margin: 0 auto;
+}
