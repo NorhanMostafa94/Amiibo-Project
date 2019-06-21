@@ -1,6 +1,4 @@
 import React from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faEllipsisH } from '@fortawesome/free-solid-svg-icons'
 const AmiiboCard = (props) => {
     const { image, name, amiiboSeries } = props;
     return (
@@ -9,7 +7,6 @@ const AmiiboCard = (props) => {
             <h6 className="grid-item__header">{name}</h6>
             <h6 className="grid-item__subheader">{amiiboSeries}</h6>
             <i className="fas fa-ellipsis-h"></i>
-            {/* <FontAwesomeIcon icon={faEllipsisH} /> */}
         </div>
     );
 }

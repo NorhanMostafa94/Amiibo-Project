@@ -1,5 +1,4 @@
 import React, { Suspense } from 'react';
-// import logo from './logo.svg';
 import './App.css';
 import './style.css';
 import './fontawesome/css/all.min.css'
