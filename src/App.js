@@ -14,7 +14,7 @@ const App = () => {
 
       <InfiniteScroll
         pageStart={0}
-        // loadMore={loadFunc}
+        loadMore={() => { }}
         hasMore={true || false}
         loader={<div className="loader" key={0}>
           <div className="loading-1"></div>

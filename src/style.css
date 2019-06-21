@@ -6,9 +6,16 @@
 
 .grid-item__header {
     text-transform: capitalize;
-    text-align: center;
+    text-align: left;
     font-weight: 500;
     margin-top: 15px;
+}
+
+.grid-item__subheader {
+    color: #908f8f;
+    text-transform: capitalize;
+    line-height: 0.2;
+    text-align: left;
 }
 
 .grid-item__img {

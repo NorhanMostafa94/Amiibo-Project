@@ -1,11 +1,15 @@
 import React from 'react';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faEllipsisH } from '@fortawesome/free-solid-svg-icons'
 const AmiiboCard = (props) => {
-    const { image, name } = props;
+    const { image, name, amiiboSeries } = props;
     return (
         <div className="grid-item">
             <img className="grid-item__img" src={image} alt={image} />
-            {/* <h4>{name}</h4> */}
-            <h5 className="grid-item__header">{name}</h5>
+            <h6 className="grid-item__header">{name}</h6>
+            <h6 className="grid-item__subheader">{amiiboSeries}</h6>
+            {/* <i class="fas fa-ellipsis-h"></i> */}
+            {/* <FontAwesomeIcon icon={faEllipsisH} /> */}
         </div>
     );
 }
