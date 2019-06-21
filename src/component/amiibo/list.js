@@ -20,7 +20,6 @@ class AmiiboList extends Component {
         console.log(e.target.value)
         let { inputValue } = this.state;
         inputValue = e.target.value;
-        // console.log(this.state.inputValue)
         if (inputValue !== '') {
             let filteredData = this.state.data.filter(el => el.name.toLowerCase().includes(inputValue.toLowerCase()))
             this.setState({ filteredData, inputValue: inputValue })
