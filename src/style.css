@@ -1,5 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding-bottom: 20px !important;
+    padding-left: 94px !important;
+    padding-right: 94px !important;
+    background-color: #ffffff !important;
+    max-width: 100% !important;
+    position: fixed !important;
+}
+
 .form-control {
-    margin-top: 50px;
+    margin-top: 35px;
     background-color: #efefef !important;
     border: 0 !important;
 }
@@ -23,16 +36,32 @@
     object-fit: cover;
 }
 
+.fa-ellipsis-h {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding-top: 9px;
+    text-align: center;
+    float: right;
+}
+
+.fa-ellipsis-h:hover {
+    background-color: #a9a9a9;
+    transition: all 0.3s;
+}
+
 
 .grid-layout {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     grid-gap: 25px;
-    padding: 30px 35px 30px;
-    margin-top: 20px;
+    padding: 150px 35px 30px;
+    scroll-behavior: smooth;
+
 }
 
 .grid-item {
+    scroll-behavior: smooth;
     padding: 1rem;
     font-size: 14px;
     font-weight: bold;
